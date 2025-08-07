@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taskia - Task Management</title>
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+     
+      color: #222;
+    }
+
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+   
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .navbar .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #361dd8;
+    }
+
+    .navbar .btn {
+      background-color: #5a6dfd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 40px;
+     
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .hero-form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      width: 60%;
+      margin-right: 10px;
+    }
+
+    .hero-form button {
+      background-color: #5a6dfd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    .hero-img img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    
+    .features {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .features h2 {
+      margin-bottom: 40px;
+    }
+
+    .feature-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .card img {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    
+    .why {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .why img {
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .why-text {
+      max-width: 400px;
+    }
+
+    .why-text h2 {
+      margin-bottom: 20px;
+    }
+
+    .why-text p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .why-text button {
+      background-color: #5a6dfd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    
+    .stats {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: white;
+    }
+
+    .stats h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .stats h1 {
+      font-size: 60px;
+      color: #5a6dfd;
+    }
+
+    
+    .cta {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .cta input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      width: 60%;
+      max-width: 300px;
+      margin-right: 10px;
+    }
+
+    .cta button {
+      background-color: #5a6dfd;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .why {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-form input {
+        width: 100%;
+        margin: 10px 0;
+      }
+
+      .hero-form button {
+        width: 100%;
+      }
+
+      .why-text {
+        margin-top: 20px;
+      }
+
+      .cta input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .cta button {
+        width: 100%;
+      }
+    }
+    .circle-img {
+      width: 150px;
+      height: 100%;
+      border-radius: 50%;
+      margin: 0 10px;
+    }
+    
+    
+  </style>
+  
+</head>
+
+<body>
+
+  
+  <div class="navbar">
+    <div class="logo">Taskia</div>
+    <button class="btn">Try free</button>
+  </div>
+
+  
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Task management and lists Tool</h1>
+      <p>We believe designing products and services with clients is the only way to have real impact.</p>
+      <div class="hero-form">
+        <input type="text" placeholder="Name@company.com">
+        <button>Try it free</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="hero image.jpg" alt="Illustration">
+    </div>
+  </div>
+
+  
+  <div class="features">
+    <h2>Featured Service that We Provide</h2>
+    <div class="feature-cards">
+      <div class="card" style="background-color: rgba(4, 4, 244, 0.477);">
+        <img src="first.jpeg" />
+        <h3>Keep tasks in one place</h3>
+        <p>Save time, avoid losing work and stay on schedule.</p>
+      </div>
+      <div class="card" style="background-color: rgba(128, 128, 128, 0.503);">
+        <img src="second.jpeg" />
+        <h3>Stay organized</h3>
+        <p>Track tasks, delegate and manage your team efficiently.</p>
+      </div>
+      <div class="card" style="background-color: rgba(255, 255, 0, 0.375);">
+        <img src="third.jpeg" />
+        <h3>Set reminders</h3>
+        <p>Never miss a deadline again with built-in reminders.</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="why">
+    <img src="shedule.jpeg" alt="shedule image">
+    <div class="why-text">
+      <h2>Why do you need task management</h2>
+      <p>Do you waste time organizing sticky notes, emails, and apps for to-dos? Use one solution to manage all your tasks in one place.</p>
+      <button>Learn more</button>
+    </div>
+  </div>
+
+  
+  <div class="stats">
+    <h3>Trust us and feel free to try our service</h3>
+    <div>
+        <img src="circle1.png" alt="User Icon" style="display:" class="circle-img">
+         <h1>100 000</h1>
+         <img src="pngtree-darker-sunglasses-of-a-perfet-young-man-image_15923191.jpg" alt="Task Icon" style="display: flex;" class="circle-img">
+    </div>
+  </div>
+ 
+
+  <div>
+  <div class="cta">
+    <h2>Get better work done</h2>
+    <p>See why millions of people across 195 countries use Taskia.</p>
+    <input type="text" placeholder="Name@company.com">
+    <button>Try it free</button>
+     </div>
+   
+</div>
+
+</body>
+</html>
