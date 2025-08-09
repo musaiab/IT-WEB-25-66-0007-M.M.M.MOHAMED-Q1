@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Taskia - Task Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <style>
     body {
@@ -155,6 +156,65 @@
       border: none;
       border-radius: 20px;
     }
+    .team-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.team-text {
+  flex: 1;
+}
+
+.team-text h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.team-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.store-links {
+  display: flex;
+  gap: 15px;
+}
+
+.store-icon {
+  height: 40px;
+}
+
+.team-image {
+  flex: 1;
+  text-align: right;
+}
+
+.team-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .team-image {
+    text-align: center;
+  }
+}
 
     
     .stats {
@@ -300,6 +360,31 @@
     </div>
   </div>
 
+  <section class="team-section">
+  <div class="team-container">
+    
+  
+    <div class="team-text">
+      <h2>Seamless Team<br>Workflow &amp; Efficient</h2>
+      <p>
+        Do you waste time organizing sticky notes, searching your email and apps for to-dos,
+        and figuring out what to work on first? Then you need one solution to prioritize your
+        tasks, manage your time, and meet your deadlines.
+      </p>
+      <div class="store-links">
+        <i class="fa-brands fa-apple" class="store-icon"></i>
+        <i class="fa-brands fa-google-play" class="store-icon"></i>
+      </div>
+    </div>
+
+    
+    <div class="team-image">
+      <img src="WhatsApp Image 2025-08-09 at 13.29.05.jpeg" alt="Team Workflow Preview">
+    </div>
+
+  </div>
+</section>
+
   
   <div class="stats">
     <h3>Trust us and feel free to try our service</h3>
@@ -310,7 +395,7 @@
     </div>
   </div>
  
-
+  
   <div>
   <div class="cta">
     <h2>Get better work done</h2>
